@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justo Genie Embed Test</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f7fb;
+        font-family: system-ui, sans-serif;
+      }
+      .embed-wrapper {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      iframe {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: min(560px, calc(100vw - 40px));
+        height: min(640px, calc(100vh - 40px));
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      }
+
+      @media (max-width: 640px) {
+        iframe {
+          right: 12px;
+          bottom: 12px;
+          width: calc(100vw - 24px);
+          height: calc(100vh - 24px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="embed-wrapper">
+      <iframe
+        src="http://localhost:5173/iframe.html?backendUrl=/api&brandColor=%230f4c81&welcomeMessage=Hi!%20I%27m%20Justo%20Genie.%20Ask%20me%20anything%20about%20Justo%20Global.&prompts=What%20technology%20services%20does%20Justo%20offer%3F,Can%20Justo%20help%20build%20a%20mobile%20app%3F,How%20can%20AI%20improve%20my%20business%20workflow%3F"
+        title="Justo Genie iframe widget"
+      ></iframe>
+    </div>
+  </body>
+</html>

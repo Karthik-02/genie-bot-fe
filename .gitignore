@@ -1,0 +1,13 @@
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Generated local vector database
+ingestion/chroma_db/
+genie-bot-be/knowledge/chroma_db/
+
+# Downloaded embedding model cache
+ingestion/.model_cache/
+genie-bot-be/knowledge/.model_cache/
